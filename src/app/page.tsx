@@ -29,22 +29,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export default function MarketingPage() {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const features = [
+const features = [
     {
       icon: Brain,
       title: "AI-Powered Automation",
@@ -171,6 +156,21 @@ export default function MarketingPage() {
       rating: 5,
     },
   ];
+
+export default function MarketingPage() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="min-h-screen bg-background scroll-smooth pt-16 lg:pt-20">
