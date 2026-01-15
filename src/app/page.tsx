@@ -512,7 +512,7 @@ export default function MarketingPage() {
                     ))}
                   </div>
                   <CardDescription className="text-base leading-relaxed">
-                    "{testimonial.content}"
+                    &quot{testimonial.content}&quot
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -653,8 +653,8 @@ export default function MarketingPage() {
               About FractalGrid
             </h2>
             <p className="text-lg text-muted-foreground">
-              We're on a mission to transform IT operations through intelligent
-              automation and data-driven insights.
+              {´We're on a mission to transform IT operations through intelligent
+              automation and data-driven insights.´}
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -669,8 +669,8 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Learn about our mission, vision, and the team behind
-                  FractalGrid's innovative solutions.
+                  {´Learn about our mission, vision, and the team behind
+                  FractalGrid's innovative solutions.´}
                 </CardDescription>
                 <Button
                   variant="ghost"
@@ -717,8 +717,8 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Join our team and help shape the future of IT automation.
-                  We're always looking for talented individuals.
+                  {´Join our team and help shape the future of IT automation.
+                  We're always looking for talented individuals.´}
                 </CardDescription>
                 <Button
                   variant="ghost"
@@ -741,8 +741,8 @@ export default function MarketingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Get in touch with our team. We're here to help you transform
-                  your IT operations.
+                  {´Get in touch with our team. We're here to help you transform
+                  your IT operations.´}
                 </CardDescription>
                 <Button
                   variant="ghost"
